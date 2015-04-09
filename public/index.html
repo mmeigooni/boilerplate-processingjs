@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello Web - Processing.js Test</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.8/processing.min.js"></script>
+</head>
+<body>
+  <h1>Processing.js Test</h1>
+  <p>This is my first Processing.js web-based sketch:</p>
+  <script type="application/processing" data-processing-target="pjs">
+    void setup() {
+      size(500, 500);
+      background(100);
+
+      ellipse(200, 92, 80, 80);  // Top scoop
+      fill(150, 100, 150);
+      ellipse(200, 141, 80, 80); // Middle scoop!
+      fill(150, 100, 15);
+      ellipse(200, 187, 80, 80);  // Bottom scoop!
+
+      fill(0, 0, 255);
+      rect(150, 200, 107, 112);  // The cup!
+
+      fill(255, 0, 0);
+      ellipse(200, 46, 20, 20);  // The cherry, yum
+      line(200, 27, 200, 36);   // And the cherry stem
+    }
+</script>
+<canvas id="pjs"> </canvas>
+</body>
+</html>
+
